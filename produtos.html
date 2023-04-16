@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atividade Avaliativa</title>
+
+
+  <!-- CSS Links -->
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <!-- Local -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/produtos.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary-color fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <!-- <i class="bi bi-buildings"></i> -->
+        <img src="/img/office-building.png" alt="">
+        <span>Empresa</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link primary-color" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link primary-color" href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link primary-color" href="servicos.html">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active primary-color" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link primary-color" href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- slider -->
+    <div class="container">
+
+      <div id="slider" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/produtos/coffee.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Melhores ofertas</h5>
+              <a href="#produtos" class="btn btn-dark">Ver mais</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/produtos/food.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cardápio nutritivo</h5>
+              <p>As opções de comidas e bebidas são consultadas por nutricionistas
+                antes de serem servidas a vocês.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/produtos/plate.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ambiente agradável</h5>
+              <p>Nosso local é pensado para você aproveitar ao máximo,
+                seja para um encontro entre amigos ou um estudo sozinho.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/produtos/money.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Preços acessíveis</h5>
+              <p>Temos descontos todos os dias, assim como favoritos do dia!
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <i class="bi bi-chevron-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <i class="bi bi-chevron-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+      <!-- columns & cards -->
+      <div class="container text-center">
+        <div class="row" id="mini-banners">
+          <div class="col">
+
+            <!-- card -->
+            <div class="card text-center">
+              <i class="bi bi-egg-fried"></i>
+              <div class="card-body">
+                <h5 class="card-title">Ovos mexidos</h5>
+                <p class="card-text">Sua refeição para começar o dia</p>
+                <a href="#produtos" class="btn btn-dark">Comprar</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col">
+
+            <!-- card -->
+            <div class="card text-center">
+              <i class="bi bi-cup-straw"></i>
+              <div class="card-body">
+                <h5 class="card-title">Limonada</h5>
+                <p class="card-text">Um suco nutritivo e refrescante</p>
+                <a href="#produtos" class="btn btn-dark">Comprar</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col">
+
+            <!-- card -->
+            <div class="card text-center">
+              <i class="bi bi-cup-hot"></i>
+              <div class="card-body">
+                <h5 class="card-title">Cappuccino</h5>
+                <p class="card-text">Nada melhor para começar o dia!</p>
+                <a href="#produtos" class="btn btn-dark">Comprar</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- produtos -->
+    <div class="container" id="produtos">
+
+      <hr>
+
+      <h2 class="secondary-color display-6">Mais vendidos</h2>
+      <p class="secondary-color">Experimente os sabores mais gostosos!</p>
+
+      <div class="row g-4">
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn-produtos col-md-4" data-bs-toggle="modal" data-bs-target="#produto01">
+          <img src="/img/produtos/destaque01.png" class="img-fluid" alt="">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="produto01" tabindex="-1" aria-labelledby="Produto 1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+              </div>
+              <div class="modal-body">
+                <h3 class="tertiary-color">Capuccino</h3>
+                <p class="tertiary-color">Um clássico! Prove nosso cappuccino por apenas R$6,50!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn-produtos col-md-4" data-bs-toggle="modal" data-bs-target="#produto02">
+          <img src="/img/produtos/destaque02.png" class="img-fluid" alt="">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="produto02" tabindex="-1" aria-labelledby="Produto 2" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+              </div>
+              <div class="modal-body">
+                <h3 class="tertiary-color">Pratos vegetarianos!</h3>
+                <p class="tertiary-color">Nossa opção vegetariana inclui uma massa com tempero verde
+                  junto com um milkshake de morango à base de leite de soja.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn-produtos col-md-4" data-bs-toggle="modal" data-bs-target="#produto03">
+          <img src="/img/produtos/destaque03.png" class="img-fluid" alt="">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="produto03" tabindex="-1" aria-labelledby="Produto 3" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+              </div>
+              <div class="modal-body">
+                <h3 class="tertiary-color">Almoço</h3>
+                <p class="tertiary-color">Para o almoço, sugerimos nosso favorito nos dias de pico: arroz carreteiro
+                  e lagosta, acompanhado de uma saladinha.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn-produtos col-md-4" data-bs-toggle="modal" data-bs-target="#produto04">
+          <img src="/img/produtos/destaque04.png" class="img-fluid" alt="">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="produto04" tabindex="-1" aria-labelledby="Produto 4" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+              </div>
+              <div class="modal-body">
+                <h3 class="tertiary-color">Limonada</h3>
+                <p class="tertiary-color">Tome um gole da nossa famosa limonada por apenas R$6,50!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn-produtos col-md-4" data-bs-toggle="modal" data-bs-target="#produto05">
+          <img src="/img/produtos/destaque05.png" class="img-fluid" alt="">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="produto05" tabindex="-1" aria-labelledby="Produto 5" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+              </div>
+              <div class="modal-body">
+                <h3 class="tertiary-color">Café</h3>
+                <p class="tertiary-color">Para o cafezinho da tarde, temos diversas opções de café,
+                  venha ao nosso estabelecimento conferir!
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn-produtos col-md-4" data-bs-toggle="modal" data-bs-target="#produto06">
+          <img src="/img/produtos/destaque06.png" class="img-fluid" alt="">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="produto06" tabindex="-1" aria-labelledby="Produto 6" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+              </div>
+              <div class="modal-body">
+                <h3 class="tertiary-color">Latte</h3>
+                <p class="tertiary-color">Confira essa mistura de café expresso com leite vaporizado (enfeitado
+                  por uma linda estampa feita de espuma).
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-dark">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+    </div>
+
+    <!-- garantias -->
+    <div class="container" id="conheca">
+      <h1>Conheça nossas garantias!</h1>
+
+      <div class="accordion" id="garantias">
+        <div class="accordion-item">
+          <h2 class="accordion-header" >
+            <button class="accordion-button"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="bi bi-star"></i> Qualidade
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Todos os nossos produtos são feitos com cuidado, seguindo medidas de higiene e padrões dignos para que comidas e bebidas cheguem
+              na melhor qualidade possível até você.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="bi bi-star"></i> Originalidade
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Nossos chefs procuram sempre estar inovando com novos pratos e especiais em todas as datas comemorativas para que estejamos
+              preparados para satisfazer a sua fome ao mesmo tempo que procuramos entreter os seus dias.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <i class="bi bi-star"></i> Aparências
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Além de termos um ambiente bonito e agradável a todos os gostos, também mantemos uma transparência com o cliente,
+              deixando-o saber de nossos procedimentos para melhor contato direto.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <i class="bi bi-star"></i> Inclusão
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Nosso estabelecimento não permite qualquer tipo de discriminação ou preconceito e nossa equipe
+              é preparada para lidar e impedir que situações desagradáveis aconteçam.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <i class="bi bi-star"></i> Valores
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Para o maior conforto dos clientes, procuramos manter os preços de maneira acessível 
+              e justa!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- rodape -->
+  <footer class="bg-dark-color" id="rodape">
+    <br>
+    <br>
+
+    <div class="container">
+      <div>
+        <!-- <img src="img/logo.png" alt=""> -->
+      </div>
+
+      <div class="row justify-content-between" id="detalhes">
+
+        <div class="col-md-4" id="novidades">
+          <h4>Quer receber as novidades?</h4>
+          <p class="primary-color">Inscreva-se para receber nossas novidades.</p>
+
+          <form action="">
+            <input type="email" class="form-control mb-3" name="" id="" placeholder="Digite seu e-mail">
+            <button class="btn btn-dark">Cadastrar</button>
+          </form>
+        </div>
+
+        <div class="col-md-4" id="contato">
+          <h4>Contato</h4>
+          <p><a href="tel:99999999999">(99) 99999-9999</a></p>
+          <p><a href="mailto:contato@dominio.com">contato@dominio.com</a></p>
+        </div>
+
+        <div class="col-md-4" id="rede-social">
+          <h4>Redes sociais</h4>
+          <p><a href=""><i class="bi bi-facebook"></i>facebook.com/empresa</a></p>
+          <p><a href=""><i class="bi bi-instagram"></i>@empresa</a></p>
+          <p><a href=""><i class="bi bi-youtube"></i>youtube.com/empresa</a></p>
+          <p><a href=""><i class="bi bi-twitter"></i>twitter.com/empresa</a></p>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div id="copyright" class="row justify-content-between">
+        <div class="col-md-3 primary-color">
+          <p>&copy; Todos os direitos reservados - 2023</p>
+        </div>
+
+        <div class="col-md-2 primary-color">
+          <p>Nome da Agência</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
