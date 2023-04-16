@@ -1,0 +1,381 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/* background colors */
+.bg-primary-color {
+    background-color: #ffffff;
+}
+
+.bg-secondary-color {
+    background-color: #ececec;
+}
+
+.bg-dark-color {
+    background-color: #000;
+}
+
+/* colors */
+.primary-color {
+    color: #7a7a7a;
+}
+
+.secondary-color {
+    color: #1c1c1c;
+}
+
+/* navbar */
+#navbar {
+    border-bottom: 1px solid #7a7a7a;
+}
+
+/* alternar tamanho do ícone */
+.navbar-brand img {
+    width: 25px;
+}
+
+/* alternar a fonte */
+.navbar-brand span {
+    font-weight: 800;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+/* alternar a área do menu */
+#navbarNav .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbarNav .nav-item {
+    margin: 0 2em;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+/* menu hover */
+#navbar a:hover {
+    color: #7a7a7a;
+}
+
+/* marcar o link ativo */
+#navbar a.active {
+    border-bottom: 1px solid #7a7a7a;
+}
+
+/* slider carousel */
+/* margem topo da foto */
+#slider {
+    margin-top: 6em;
+}
+
+/* centralizar texto do slide */
+.carousel-caption {
+    bottom: 18em;
+}
+
+/* mudar o título */
+.carousel-caption h5 {
+    font-size: 4em;
+    text-shadow: 3px 3px 1px #1c1c1c;
+}
+
+/* descricao */
+.carousel-caption p {
+    font-size: 2em;
+    text-shadow: 2px 2px 1px #1c1c1c;
+}
+
+/* botao */
+.carousel-caption .btn {
+    border-radius: 0;
+    padding: 0.5em 2em;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+/* formatar indicadores */
+.carousel-indicators [data-bs-target] {
+    background-color: #2c2c2c;
+    opacity: 0.8;
+}
+
+/* formatar o indicador ativo */
+.carousel-indicators .active {
+    background-color: black;
+}
+
+/* posicionar os indicadores */
+.carousel-indicators {
+    bottom: 7em;
+}
+
+/* formatar as setas */
+.carousel-control-prev i,
+.carousel-control-next i {
+    color: #000;
+    font-size: 3em;
+}
+
+/* mini-banners / cards */
+/* tirar os espaços do texto do centro */
+.container .text-center {
+    padding: 0;
+}
+
+#mini-banners {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+/* ajustar os cards */
+#mini-banners .card {
+    border-radius: 0%;
+    padding: 2em 1em;
+    margin-bottom: 1em;
+}
+
+/* tirar o espaço da coluna */
+#mini-banners .col {
+    padding: 0;
+}
+
+/* formatar os icones */
+#mini-banners i {
+    font-size: 4rem;
+}
+
+/* formatar o título */
+#mini-banners .card-title {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/* formatar botões dos cards */
+#mini-banners .btn {
+    border-radius: 0;
+    margin-top: 1.5rem;
+    padding: 0.4em 1.5em;
+    font-size: 0.9em;
+}
+
+/* destaques */
+/* criar margem para o topo */
+#destaque {
+    margin-top: 4em;
+}
+
+/* formatar linha */
+#destaque hr {
+    width: 6em;
+    border: 1px solid #1c1c1c;
+    opacity: 1;
+    margin-bottom: 0.7em;
+}
+
+/* criar margem superior */
+#destaque .row {
+    margin-top: 1em;
+}
+
+/* alterar a posição da coluna */
+#destaque .row .col-md-4 {
+    position: relative;
+    cursor: pointer;
+}
+
+/* formatar o banner */
+#destaque .row .col-md-4 #content-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+/* ocultar títulos e descrição */
+#destaque .row .col-md-4 #content-banner {
+    opacity: 0;
+}
+
+#destaque .row .col-md-4:hover #content-banner {
+    opacity: 0.8;
+}
+
+/* informações importantes */
+/* formatar a linha */
+#info-importante hr {
+    width: 6em;
+    border: 1px solid #7a7a7a;
+    opacity: 1;
+    margin-bottom: 0.7em;
+}
+
+/* tirar a margem da linha */
+#info-importante .row {
+    margin: 0;
+    margin-bottom: 3em;
+}
+
+/* formatar imagem da empresa */
+#info-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* margem para o texto de conteúdo */
+#info-conteudo {
+    padding: 2em;
+}
+
+/* formatar o parágrafo */
+#info-conteudo>p {
+    text-align: justify;
+    margin-top: 1em;
+}
+
+/* espaço dos dados */
+#info-numeros {
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* mudar o tamanho dos numeros */
+#info-numeros h1 {
+    font-size: 4em;
+}
+
+/* formatar o botao */
+#info-conteudo .btn {
+    padding: 0.4em 1.5em;
+    border-radius: 0;
+}
+
+/* rodape */
+#rodape,
+#detalhes,
+#novidades,
+#edes-sociais {
+    margin-top: 2em;
+    margin: 0;
+}
+
+#rodape img {
+    width: 3em;
+    margin-top: 1em;
+}
+
+#rodape span {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1em;
+    padding-left: 0.5em;
+}
+
+/* alterar o título de todas as colunas */
+#detalhes h4 {
+    color: #ffffff;
+    margin: 1.5em 0 1em 0;
+    font-weight: 300;
+}
+
+/* formatar o parágrafo */
+#detalhes p {
+    font-size: 0.9em;
+}
+
+/* formatar o campo */
+#detalhes input {
+    border-radius: 0;
+    width: 100%;
+}
+
+/* formatar botao */
+#detalhes button {
+    border-radius: 0%;
+    font-size: 0.9em;
+}
+
+/* formatar os links */
+#detalhes a {
+    color: #7a7a7a;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+
+#detalhes a:hover {
+    color: #ffffff;
+}
+
+
+/* formatar os icones */
+#rede-social i {
+    font-size: 1.5em;
+    padding-right: 0.5em;
+}
+
+/* formatar a linha */
+#rodape hr {
+    border: 1px solid #7a7a7a;
+    opacity: 1;
+    margin: 3em 0 1em 0;
+}
+
+/* formatar o aviso de copyright */
+#copyright {
+    text-align: center;
+}
+
+/* MD para resolução de tela 768px*/
+@media (min-width: 768px) {
+    /* cards */
+    #mini-banners {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 80%;
+        margin: -6em auto 0 auto;
+    }
+
+    #mini-banners .card {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* informacoes importantes */
+    /* alterar a margem da foto da empresa */
+    #info-banner {
+        padding-right: 0.5em;
+    }
+
+    /* alternar a margem do conteúdo */
+    #info-conteudo {
+        padding: 3.5em;
+    }
+
+    /* rodape */
+    /* bordas e espaços na segunda coluna */
+    #contato {
+        border-right: 2px solid #7a7a7a;
+        border-left: 2px solid #7a7a7a;
+    }
+
+    #novidade,
+    #contato,
+    #rede-social {
+        padding: 0 2em;
+    }
+}
